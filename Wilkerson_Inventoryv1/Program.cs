@@ -85,7 +85,7 @@ namespace WIlkerson_Inventoryv1
     class Cracker : IShippable
     {
         public decimal ShipCost { get; } = 0.57M;
-        public string Product { get; } = "Cracker";
+        public string Product { get; } = "Crackers";
     }
 
     class Shipper
@@ -112,7 +112,7 @@ namespace WIlkerson_Inventoryv1
             Console.WriteLine("Shipment manifest:");
             foreach (var item in itemCounts)
             {
-                Console.WriteLine($"{item.Value} {item.Key}" + (item.Value > 1 && item.Key != "Cracker" ? "s" : ""));
+                Console.WriteLine($"{item.Value} {item.Key}" + (item.Value > 1 && item.Key != "Crackers" ? "s" : ""));
             }
         }
 
